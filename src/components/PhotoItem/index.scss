@@ -1,4 +1,4 @@
-.album__container__item {
+.photo__container__item {
   height: 150px;
   width: 150px;
   background-color: #f0f2f5;
@@ -7,13 +7,9 @@
   align-items: center;
   margin-bottom: 83px;
   margin-left: 60px;
-  :hover {
-    background-color: #67686a;
-    color: black;
-  }
 }
 
-.album__container__item__title {
+.photo__container__item__title {
   font-family: "Depot New";
   font-style: normal;
   font-weight: 500;

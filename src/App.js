@@ -1,19 +1,21 @@
-import { MainPage } from './pages';
-import Header from './components/Header/Header';
-import { useFetch } from "./hooks";
-import './App.css';
+import React from "react";
+import { MainPage } from "./pages";
+import { Header } from "./components/";
+import { AlbumContext } from "./contexts/AlbumContext";
+
+import "./App.css";
 
 function App() {
-  const { loading, data, error } = useFetch(process.env.REACT_APP_ALBUM_URL);
-  
-  if (loading) {
+  const { loading, data } = React.useContext(AlbumContext);
+
+  if (loading || !data) {
     return (
       <div className="App">
         <div className="loader"></div>
       </div>
     );
   }
-  
+
   return (
     <div className="App">
       <Header />
