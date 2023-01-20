@@ -1,0 +1,19 @@
+.page__title__container {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page__title__content {
+  font-family: 'Depot New';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 54px;
+  /* identical to box height */
+  text-align: center;
+  /* dark grey */
+  color: #32343C;
+}
