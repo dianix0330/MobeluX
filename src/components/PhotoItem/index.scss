@@ -8,6 +8,10 @@
   margin-bottom: 83px;
   margin-left: 60px;
   cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    opacity: 0.5;
+  }
 }
 
 .photo__container__item__title {

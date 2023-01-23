@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Scroll from "react-awesome-scroll";
 import { useFetch } from "../../hooks";
 import PhotoItem from "../PhotoItem/PhotoItem.jsx";
 import "./index.scss";
@@ -18,6 +19,15 @@ export default function PhotoContainer({ AlbumId }) {
     setTitle(_title);
   };
 
+  if(error) {
+    console.log(error);
+    return (
+      <>
+        Something wrong...
+      </>
+    )
+  }
+
   if (loading || !data) {
     return (
       <div className="photo__container">
@@ -27,18 +37,22 @@ export default function PhotoContainer({ AlbumId }) {
   }
 
   return (
-    <div className="photo__container">
-      {data.map((photo_item, index) => (
-        <PhotoItem
-          key={index + ":" + photo_item.id}
-          id={photo_item.id}
-          thumbnailUrl={photo_item.thumbnailUrl}
-          url={photo_item.url}
-          handlePhotoClick={() =>
-            OnPhotoClick(photo_item.url, photo_item.title)
-          }
-        />
-      ))}
+    <>
+      <Scroll>
+        <div className="photo__container">
+          {data.map((photo_item, index) => (
+            <PhotoItem
+              key={index + ":" + photo_item.id}
+              id={photo_item.id}
+              thumbnailUrl={photo_item.thumbnailUrl}
+              url={photo_item.url}
+              handlePhotoClick={() =>
+                OnPhotoClick(photo_item.url, photo_item.title)
+              }
+            />
+          ))}
+        </div>
+      </Scroll>
       {show && (
         <>
           <div
@@ -57,6 +71,6 @@ export default function PhotoContainer({ AlbumId }) {
           </div>
         </>
       )}
-    </div>
+    </>
   );
 }
