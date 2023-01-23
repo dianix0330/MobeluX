@@ -20,12 +20,7 @@ export default function PhotoContainer({ AlbumId }) {
   };
 
   if(error) {
-    console.log(error);
-    return (
-      <>
-        Something wrong...
-      </>
-    )
+    throw new Error(error.statusText);
   }
 
   if (loading || !data) {

@@ -4,10 +4,15 @@ import { PageTitle } from "../../components";
 import { useLocation, useParams } from "react-router-dom";
 import "./index.scss";
 
+// This is the PhotoPage component which is the photo page of the application.
+
 export default () => {
-  const location = useLocation();
-  let { id } = useParams();
-  const { title } = location.state;
+  const location = useLocation(); //This uses the React Router useLocation hook to get the current location information
+
+  let { id } = useParams(); //This uses the React Router useParams hook to get the id of the current route params
+
+  const { title } = location.state; //This gets the title from the current location state
+
   return (
     <div className="main">
       <PageTitle pageTitle={title} />
