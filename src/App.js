@@ -1,8 +1,9 @@
 import React from "react";
-import { MainPage } from "./pages";
+import { MainPage, PhotoPage } from "./pages";
 import { Header } from "./components/";
 import { AlbumContext } from "./contexts/AlbumContext";
 
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import "./App.css";
 
 function App() {
@@ -19,7 +20,14 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <MainPage />
+      <Router>
+        <Routes>
+            <Route exact path="/" element={<Navigate to="/albums" />} />
+            <Route path="/albums/" element={<MainPage />} />
+            <Route path="/albums/:id" element={<PhotoPage />} />
+            <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
+      </Router>
     </div>
   );
 }

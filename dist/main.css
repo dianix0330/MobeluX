@@ -1,0 +1,280 @@
+/*!**************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/index.css ***!
+  \**************************************************************************************************************************************************/
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+/*!*********************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Header/index.scss ***!
+  \*********************************************************************************************************************************************************************/
+.header {
+  position: relative;
+  width: 100vw;
+  height: 62px;
+  left: 0px;
+  top: 0px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.05);
+}
+
+.header__logo {
+  position: absolute;
+  width: 110.4px;
+  height: 24px;
+  left: 30px;
+  top: calc(50% - 12px);
+  background: url(b2e374b38d1240a3fc27.png);
+}
+/*!************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/PageTitle/index.scss ***!
+  \************************************************************************************************************************************************************************/
+.page__title__container {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page__title__content {
+  font-family: "Depot New";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 54px;
+  text-transform: uppercase;
+  /* identical to box height */
+  text-align: center;
+  /* dark grey */
+  color: #32343C;
+}
+/*!************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/AlbumItem/index.scss ***!
+  \************************************************************************************************************************************************************************/
+.album__container__item {
+  height: 150px;
+  width: 150px;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 83px;
+  margin-left: 60px;
+  cursor: pointer;
+}
+.album__container__item:hover {
+  background-color: #67686a;
+  color: white;
+}
+
+.album__container__item__title {
+  font-family: "Depot New";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 20px;
+  /* dark grey */
+  user-select: none;
+  color: #32343c;
+}
+.album__container__item__title:hover {
+  color: white;
+}
+/*!*****************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/AlbumContainer/index.scss ***!
+  \*****************************************************************************************************************************************************************************/
+.album__container {
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+  flex-wrap: wrap;
+  overflow: auto;
+  justify-content: space-around;
+}
+/*!************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/PhotoItem/index.scss ***!
+  \************************************************************************************************************************************************************************/
+.photo__container__item {
+  height: 150px;
+  width: 150px;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 83px;
+  margin-left: 60px;
+  cursor: pointer;
+}
+
+.photo__container__item__title {
+  font-family: "Depot New";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 20px;
+  /* dark grey */
+  color: #32343c;
+}
+/*!*****************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/PhotoContainer/index.scss ***!
+  \*****************************************************************************************************************************************************************************/
+.photo__container {
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+  flex-wrap: wrap;
+  overflow: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.photo__container__modal {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* dark grey */
+  background-color: rgba(50, 52, 60, 0.5019607843);
+}
+
+.modal__container {
+  height: 600px;
+  width: 600px;
+  background-color: white;
+}
+
+.modal__container__content {
+  background: #f0f2f5;
+  height: 600px;
+  width: 600px;
+}
+
+.modal__container__title {
+  font-family: "Depot New";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  height: 60px;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #5f7a98;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*!******************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/MainPage/index.scss ***!
+  \******************************************************************************************************************************************************************/
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+  width: 100%;
+  padding: 0px 330px;
+  box-sizing: border-box;
+}
+/*!*******************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/pages/PhotoPage/index.scss ***!
+  \*******************************************************************************************************************************************************************/
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+  width: 100%;
+  padding: 0px 330px;
+  box-sizing: border-box;
+}
+/*!************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/App.css ***!
+  \************************************************************************************************************************************************/
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #5f7a98;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

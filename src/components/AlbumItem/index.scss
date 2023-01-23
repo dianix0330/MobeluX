@@ -7,9 +7,10 @@
   align-items: center;
   margin-bottom: 83px;
   margin-left: 60px;
-  :hover {
+  cursor: pointer;
+  &:hover {
     background-color: #67686a;
-    color: black;
+    color: white;
   }
 }
 
@@ -24,8 +25,13 @@
   text-align: center;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  text-decoration: none;
   padding: 20px;
   /* dark grey */
+  user-select: none;
 
   color: #32343c;
+  &:hover {
+    color: white;
+  }
 }

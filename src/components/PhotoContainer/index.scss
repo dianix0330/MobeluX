@@ -1,0 +1,78 @@
+.photo__container {
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+  flex-wrap: wrap;
+  overflow: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.photo__container__modal {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* dark grey */
+  background-color: #32343c80;
+}
+
+.modal__container {
+  height: 600px;
+  width: 600px;
+  background-color: white;
+}
+
+.modal__container__content {
+  background: #f0f2f5;
+  height: 600px;
+  width: 600px;
+}
+
+.modal__container__title {
+  font-family: "Depot New";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  height: 60px;
+}
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #5f7a98;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

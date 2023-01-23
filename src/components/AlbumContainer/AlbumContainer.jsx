@@ -1,5 +1,5 @@
 import React from "react";
-import { AlbumItem } from "..";
+import AlbumItem from "../AlbumItem/AlbumItem.jsx";
 import { AlbumContext } from "../../contexts/AlbumContext";
 import "./index.scss"
 
