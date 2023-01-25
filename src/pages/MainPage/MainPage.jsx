@@ -1,7 +1,7 @@
 import React from "react";
 import { AlbumContainer } from "../../components";
 import { PageTitle } from "../../components";
-import "./index.scss";
+import "../../App.css";
 
 // This is the MainPage component which is the main page of the application. - album page 
 

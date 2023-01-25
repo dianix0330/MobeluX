@@ -3,6 +3,7 @@ import Scroll from "react-awesome-scroll";
 import { useFetch } from "../../hooks";
 import PhotoItem from "../PhotoItem/PhotoItem.jsx";
 import "./index.scss";
+import "../../App.css";
 
 export default function PhotoContainer({ AlbumId }) {
   const { loading, data, error } = useFetch(

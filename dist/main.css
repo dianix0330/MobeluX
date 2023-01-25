@@ -68,6 +68,7 @@ code {
   margin-bottom: 83px;
   margin-left: 60px;
   cursor: pointer;
+  transition: 0.3s;
 }
 .album__container__item:hover {
   background-color: #67686a;
@@ -102,7 +103,6 @@ code {
   flex-direction: row;
   height: 500px;
   flex-wrap: wrap;
-  overflow: auto;
   justify-content: space-around;
 }
 /*!************************************************************************************************************************************************************************!*\
@@ -118,6 +118,10 @@ code {
   margin-bottom: 83px;
   margin-left: 60px;
   cursor: pointer;
+  transition: 0.3s;
+}
+.photo__container__item:hover {
+  opacity: 0.5;
 }
 
 .photo__container__item__title {
@@ -143,7 +147,6 @@ code {
   flex-direction: row;
   height: 500px;
   flex-wrap: wrap;
-  overflow: auto;
   justify-content: space-around;
   align-items: center;
 }
@@ -155,16 +158,20 @@ code {
   left: 0px;
   top: 0px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   /* dark grey */
+  justify-content: center;
   background-color: rgba(50, 52, 60, 0.5019607843);
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
 }
 
 .modal__container {
-  height: 600px;
-  width: 600px;
   background-color: white;
+  width: 600px;
 }
 
 .modal__container__content {
@@ -184,10 +191,31 @@ code {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   text-transform: uppercase;
   height: 60px;
 }
 
+@-webkit-keyframes slideIn {
+  from {
+    justify-content: flex-start;
+    opacity: 0;
+  }
+  to {
+    justify-content: center;
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  from {
+    justify-content: flex-start;
+    opacity: 0;
+  }
+  to {
+    justify-content: center;
+    opacity: 1;
+  }
+}
 .loader {
   border: 16px solid #f3f3f3;
   border-radius: 50%;

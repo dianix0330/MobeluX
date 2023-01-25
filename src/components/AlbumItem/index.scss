@@ -9,30 +9,28 @@
   margin-left: 60px;
   cursor: pointer;
   transition: 0.3s;
+  
   &:hover {
     background-color: #67686a;
     color: white;
   }
-}
 
-.album__container__item__title {
-  font-family: "Depot New";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 20px;
-  /* dark grey */
-  user-select: none;
-
-  color: #32343c;
-  &:hover {
-    color: white;
+  &__title {
+    font-family: "Depot New";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 20px;
+    /* dark grey */
+    user-select: none;
+    color: #32343c;
+    &:hover {
+      color: white;
+    }
   }
 }

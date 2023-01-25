@@ -7,6 +7,16 @@
   align-items: center;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+  width: 100%;
+  padding: 0px 330px;
+  box-sizing: border-box;
+}
+
 .loader {
   border: 16px solid #f3f3f3;
   border-radius: 50%;

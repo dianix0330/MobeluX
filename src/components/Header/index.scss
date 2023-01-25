@@ -6,13 +6,13 @@
   top: 0px;
   background-color: #ffffff;
   box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.05);
-}
-
-.header__logo {
-  position: absolute;
-  width: 110.4px;
-  height: 24px;
-  left: 30px;
-  top: calc(50% - 24px / 2);
-  background: url("../../assests/images/mobelux-digital-wordmark.png");
+  
+  &__logo {
+    position: absolute;
+    width: 110.4px;
+    height: 24px;
+    left: 30px;
+    top: calc(50% - 24px / 2);
+    background: url("../../assests/images/mobelux-digital-wordmark.png");
+  }
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import {useContext} from "react";
 import Scroll from "react-awesome-scroll";
 import AlbumItem from "../AlbumItem/AlbumItem.jsx";
 import { AlbumContext } from "../../contexts/AlbumContext";
@@ -7,7 +7,7 @@ import "./index.scss";
 //This is the AlbumContainer component which is responsible for displaying the albums.
 
 export default function AlbumContainer() {
-  const { data } = React.useContext(AlbumContext); //Use AlbumContext to get the data of the Albums.
+  const { data } = useContext(AlbumContext); //Use AlbumContext to get the data of the Albums.
 
   return (
     <Scroll>

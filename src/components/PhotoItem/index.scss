@@ -14,19 +14,36 @@
   }
 }
 
-.photo__container__item__title {
-  font-family: "Depot New";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
+.photo__container__item {
+  height: 150px;
+  width: 150px;
+  background-color: #f0f2f5;
   display: flex;
+  justify-content: center;
   align-items: center;
-  text-align: center;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  padding: 20px;
-  /* dark grey */
+  margin-bottom: 83px;
+  margin-left: 60px;
+  cursor: pointer;
+  transition: 0.3s;
 
-  color: #32343c;
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &__title {
+    font-family: "Depot New";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 20px;
+    /* dark grey */
+
+    color: #32343c;
+  }
 }
