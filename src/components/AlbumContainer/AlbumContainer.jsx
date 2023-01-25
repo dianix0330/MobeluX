@@ -10,7 +10,7 @@ export default function AlbumContainer() {
   const { data } = useContext(AlbumContext); //Use AlbumContext to get the data of the Albums.
 
   return (
-    <Scroll>
+    <Scroll offsetHeight={300}>
       <div className="album__container">
         {/*AlbumContainer returns a div which contains the AlbumItem component for each album in the context data.*/}
         {data.map((album_item, index) => (
