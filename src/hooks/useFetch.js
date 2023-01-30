@@ -1,6 +1,6 @@
 import { useEffect, useReducer, useRef } from "react";
 
-function useFetch(url, option) {
+function useFetch(url, limit, option) {
   const cache = useRef({});
   const cancelRequest = useRef(false);
 
@@ -51,6 +51,7 @@ function useFetch(url, option) {
         }
         // get the data from the response and store it in the cache
         const data = await response.json();
+        if (limit) data.splice(limit);
         cache.current[url] = data;
         if (cancelRequest.current) return;
         dispatch({ type: "fetched", payload: data });

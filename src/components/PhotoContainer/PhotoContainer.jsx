@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Scroll from "react-awesome-scroll";
+import ReactShadowScroll from 'react-shadow-scroll';
 import { useFetch } from "../../hooks";
 import PhotoItem from "../PhotoItem/PhotoItem.jsx";
 import "./index.scss";
@@ -7,7 +7,8 @@ import "../../App.css";
 
 export default function PhotoContainer({ AlbumId }) {
   const { loading, data, error } = useFetch(
-    `${process.env.REACT_APP_ALBUM_URL}/${AlbumId}/photos`
+    `${process.env.REACT_APP_ALBUM_URL}/${AlbumId}/photos`,
+    15
   );
 
   const [show, setShow] = useState(false);
@@ -20,7 +21,7 @@ export default function PhotoContainer({ AlbumId }) {
     setTitle(_title);
   };
 
-  if(error) {
+  if (error) {
     throw new Error(error.statusText);
   }
 
@@ -34,7 +35,7 @@ export default function PhotoContainer({ AlbumId }) {
 
   return (
     <>
-      <Scroll>
+      <ReactShadowScroll isShadow={false}>
         <div className="photo__container">
           {data.map((photo_item, index) => (
             <PhotoItem
@@ -48,7 +49,7 @@ export default function PhotoContainer({ AlbumId }) {
             />
           ))}
         </div>
-      </Scroll>
+      </ReactShadowScroll>
       {show && (
         <>
           <div

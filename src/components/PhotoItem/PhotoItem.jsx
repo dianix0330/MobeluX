@@ -2,7 +2,7 @@ import React from "react";
 
 import "./index.scss";
 
-export default function ({ url, title, thumbnailUrl, handlePhotoClick }) {
+export default function ({ title, thumbnailUrl, handlePhotoClick }) {
   return (
     <div
       className="photo__container__item"

@@ -2,7 +2,6 @@ import React from "react";
 import { PhotoContainer } from "../../components";
 import { PageTitle } from "../../components";
 import { useLocation, useParams } from "react-router-dom";
-import "./index.scss";
 
 // This is the PhotoPage component which is the photo page of the application.
 
@@ -15,7 +14,7 @@ export default () => {
 
   return (
     <div className="main">
-      <PageTitle pageTitle={title} />
+      <PageTitle pageTitle={"Album Title"} />
       <PhotoContainer AlbumId={id} />
     </div>
   );
